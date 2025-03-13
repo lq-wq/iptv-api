@@ -1,5 +1,5 @@
 name: 删除旧的工作流运行
-on:
+on: [push]
   schedule:
     - cron: 35 18 * * *
 # Run monthly, at 00:00 on the 1st day of month.
