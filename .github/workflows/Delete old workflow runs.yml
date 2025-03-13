@@ -1,7 +1,7 @@
 name: 删除旧的工作流运行
 on:
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: 35 18 * * *
 # Run monthly, at 00:00 on the 1st day of month.
 
 jobs:
@@ -16,5 +16,5 @@ jobs:
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 30
-          keep_minimum_runs: 6
+          retain_days: 1
+          keep_minimum_runs: 1
